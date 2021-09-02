@@ -9,12 +9,14 @@
   font-size: 18px;
 }
 body {
-  background: #b7b9f4;
+  background: #6d6d81;
 }
+a {
+  text-decoration: none;
+}
+
 .nav {
   width: 100;
-  background: blue;
-  opacity: 0.6;
   display: flex;
   justify-content: center;
   position: fixd;
@@ -29,6 +31,9 @@ ul {
   justify-content: space-around;
   width: 20%;
 }
+.nav ul a {
+  color: white;
+}
 .nav ul .nav-item {
   padding: 10px 10px;
   color: var(--primery-color);
@@ -38,30 +43,40 @@ ul {
   color: black;
   border-radius: 45px;
   background: rgb(128, 119, 119);
+  cursor: pointer;
+}
+
+/*//////////////////////////////////////////////////////////////////*/
+header{
+    background: url(../img/ian-dooley-DJ7bWa-Gwks-unsplash.jpg)no-repeat center center/cover;
 }
 .h-box {
-  width: 50vw;
-  height: 100%;
 }
 .header-content {
-  height: 70vh;
+  width: 100%;
+  height: 60vh;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+
   gap: 2rem;
+}
+.header-container {
+  gap: 3rem;
+  display: flex;
+  grid-template-rows: 2;
 }
 .content-wraper {
   height: 100%;
-  display: grid;
-  grid-template-rows: 2;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .content-wraper > p {
   padding: 1rem 0.5rem;
+  line-height: 1.7rem;
 }
 .my-name {
-  height: 50px;
-  padding: 20% 0.5rem;
-  background: darkgray;
+  padding-top: 10%;
 }
 .my-name .first-name,
 .my-name .last-name {
@@ -69,7 +84,6 @@ ul {
 }
 
 .profolio-image > img {
-  width: 50%;
-  height: inherit;
+  width: 10vw;
   border-radius: 45px;
 }
