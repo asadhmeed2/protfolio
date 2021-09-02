@@ -14,7 +14,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 18px;
 }
 body {
   background: #6d6d81;
@@ -22,7 +21,7 @@ body {
 a {
   text-decoration: none;
 }
-p{
+p {
   font-family: p-font;
 }
 
@@ -40,21 +39,21 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 20%;
 }
 .nav ul a {
   color: var(--primery-color);
+  font-family: p-font;
 }
+
 .nav ul .nav-item {
   padding: 10px 10px;
   color: var(--primery-color);
+
+  border-radius: 45px;
 }
 
 .nav ul .nav-item:hover {
-  
-  border-radius: 45px;
-  background: rgb(128, 119, 119);
-  
+  background-color: rgb(128, 119, 119);
 }
 
 /*//////////////////////////////////////////////////////////////////*/
@@ -81,15 +80,14 @@ header {
   flex-direction: column;
   text-align: center;
   color: var(--primery-color);
-   
 }
-.content-wraper .first-name, 
+.content-wraper .first-name,
 .content-wraper .last-name {
   font-family: h1-font;
   opacity: 0.8;
 }
 .content-wraper > p {
-  padding-bottom: 1rem ;
+  padding-bottom: 1rem;
   padding-top: 1rem;
   line-height: 1.7rem;
   opacity: 0.8;
@@ -97,7 +95,6 @@ header {
 }
 
 .my-name {
-  
 }
 .my-name .first-name,
 .my-name .last-name {
@@ -109,32 +106,26 @@ header {
   border-radius: 45px;
   opacity: 0.9;
   transform: scale(1);
-  transition: transform 1s ease ,opacity 1s ease ,border-radius 1s ease;
-
+  transition: transform 1s ease, opacity 1s ease, border-radius 1s ease;
 }
 .profolio-image > img:hover {
   cursor: zoom-in;
   opacity: 1;
   border-radius: 0;
-transform: scale(1.5);
-transition: all 1s ease ;
+  transform: scale(1.5);
+  transition: all 1s ease;
 }
-.header-content .content-wraper ul{
-display: flex;
-justify-content: center;
-padding-top:1rem;
-
+.header-content .content-wraper ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
 }
-.header-content .content-wraper ul li{
+.header-content .content-wraper ul li {
   padding: 0 1rem;
-  
 }
-.header-content .content-wraper ul li a{
+.header-content .content-wraper ul li a {
   color: var(--primery-color);
-   
 }
-.header-content .content-wraper ul li a i{
+.header-content .content-wraper ul li a i {
   width: 40px;
-  
-   
 }
