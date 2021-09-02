@@ -1,3 +1,7 @@
+@font-face {
+  font-family: h1-font;
+  src: url("../font/MotionPersonalUseBold-2O0od.ttf");
+}
 :root {
   --primery-color: white;
 }
@@ -16,10 +20,10 @@ a {
 }
 
 .nav {
-  width: 100;
+  width: 100%;
   display: flex;
   justify-content: center;
-  position: fixd;
+  position: fixed;
 }
 
 ul {
@@ -32,7 +36,7 @@ ul {
   width: 20%;
 }
 .nav ul a {
-  color: white;
+  color: var(--primery-color);
 }
 .nav ul .nav-item {
   padding: 10px 10px;
@@ -47,17 +51,16 @@ ul {
 }
 
 /*//////////////////////////////////////////////////////////////////*/
-header{
-    background: url(../img/ian-dooley-DJ7bWa-Gwks-unsplash.jpg)no-repeat center center/cover;
+header {
+  background: url(../img/lobby.jpg) no-repeat center center/cover;
 }
-.h-box {
-}
+
 .header-content {
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
-
+  align-items: center;
   gap: 2rem;
 }
 .header-container {
@@ -70,6 +73,12 @@ header{
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: var(--primery-color);
+   opacity: 0.5;
+}
+.content-wraper .first-name, 
+.content-wraper .last-name {
+  font-family: h1-font;
 }
 .content-wraper > p {
   padding: 1rem 0.5rem;
@@ -86,4 +95,5 @@ header{
 .profolio-image > img {
   width: 10vw;
   border-radius: 45px;
+  opacity: 0.8;
 }
