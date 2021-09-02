@@ -1,6 +1,10 @@
 @font-face {
   font-family: h1-font;
-  src: url("../font/MotionPersonalUseBold-2O0od.ttf");
+  src: url("../font/GothamMedium.ttf");
+}
+@font-face {
+  font-family: p-font;
+  src: url("../font/GothamLight.ttf");
 }
 :root {
   --primery-color: white;
@@ -17,6 +21,9 @@ body {
 }
 a {
   text-decoration: none;
+}
+p{
+  font-family: p-font;
 }
 
 .nav {
@@ -44,10 +51,10 @@ ul {
 }
 
 .nav ul .nav-item:hover {
-  color: black;
+  
   border-radius: 45px;
   background: rgb(128, 119, 119);
-  cursor: pointer;
+  
 }
 
 /*//////////////////////////////////////////////////////////////////*/
@@ -74,18 +81,23 @@ header {
   flex-direction: column;
   text-align: center;
   color: var(--primery-color);
-   opacity: 0.5;
+   
 }
 .content-wraper .first-name, 
 .content-wraper .last-name {
   font-family: h1-font;
+  opacity: 0.8;
 }
 .content-wraper > p {
-  padding: 1rem 0.5rem;
+  padding-bottom: 1rem ;
+  padding-top: 1rem;
   line-height: 1.7rem;
+  opacity: 0.8;
+  font-size: 23px;
 }
+
 .my-name {
-  padding-top: 10%;
+  
 }
 .my-name .first-name,
 .my-name .last-name {
@@ -95,5 +107,34 @@ header {
 .profolio-image > img {
   width: 10vw;
   border-radius: 45px;
-  opacity: 0.8;
+  opacity: 0.9;
+  transform: scale(1);
+  transition: transform 1s ease ,opacity 1s ease ,border-radius 1s ease;
+
+}
+.profolio-image > img:hover {
+  cursor: zoom-in;
+  opacity: 1;
+  border-radius: 0;
+transform: scale(1.5);
+transition: all 1s ease ;
+}
+.header-content .content-wraper ul{
+display: flex;
+justify-content: center;
+padding-top:1rem;
+
+}
+.header-content .content-wraper ul li{
+  padding: 0 1rem;
+  
+}
+.header-content .content-wraper ul li a{
+  color: var(--primery-color);
+   
+}
+.header-content .content-wraper ul li a i{
+  width: 40px;
+  
+   
 }
