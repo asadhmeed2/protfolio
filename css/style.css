@@ -220,6 +220,7 @@ header {
     gap: 0.5rem;
   }
   .profolio-image {
+    padding: 10px;
     grid-area: second;
   }
   .content-wraper {
@@ -253,6 +254,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 10px;
+
+    margin-left: 30px;
   }
 }
