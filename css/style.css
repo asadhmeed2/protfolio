@@ -245,29 +245,14 @@ header {
   .nav {
     width: 30%;
     height: 30vh;
-    display: block;
+    display: flex;
     grid-area: first;
-    text-align: center;
   }
 
   .nav ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-  }
-  .nav ul a {
-    color: var(--primery-color);
-    font-family: p-font;
-  }
-
-  .nav ul .nav-item {
-    padding: 10px 10px;
-    color: var(--primery-color);
-
-    border-radius: 45px;
-  }
-
-  .nav ul .nav-item:hover {
-    background-color: rgb(128, 119, 119);
+    align-items: flex-start;
+    padding-left: 10px;
   }
 }
