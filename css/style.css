@@ -96,8 +96,7 @@ header {
   flex-direction: column;
 }
 
-.my-name {
-}
+
 .my-name .first-name,
 .my-name .last-name {
   font-size: 48px;
@@ -139,14 +138,14 @@ header {
   border-radius: 45px;
   display: block;
   width: 100px;
-transition: all ease 1s ;
+  transition: all ease 1s;
   font-size: 20px;
 }
 .close-about-btn ~ .close-wraper .close-about:hover {
   background: black;
   color: white;
   cursor: pointer;
-  transition: all ease 1s ;
+  transition: all ease 1s;
 }
 .about-btn ~ label {
   padding: 1rem;
@@ -157,19 +156,19 @@ transition: all ease 1s ;
   margin-top: 2rem;
   font-size: 20px;
   align-self: center;
-  transition: all ease 1s ;
+  transition: all ease 1s;
 }
 
 .about-btn ~ label:hover {
   background: white;
   color: black;
   cursor: pointer;
-  transition: all ease 1s ;
+  transition: all ease 1s;
 }
 
 .about-btn:checked ~ label ~ .about-content {
   display: block;
-  transition: all ease 1s ;
+  transition: all ease 1s;
 }
 
 .about-content p {
@@ -187,7 +186,7 @@ transition: all ease 1s ;
   border-radius: 15px;
   color: black;
   font-size: 16px;
-  transition: all ease 1s ;
+  transition: all ease 1s;
 }
 .header-content .content-wraper ul {
   display: flex;
@@ -204,29 +203,58 @@ transition: all ease 1s ;
   margin: 1rem;
 }
 
-@media (max-width : 576px) {
-
-  .header-container{
+@media (max-width: 576px) {
+  
+  .header-container {
     flex-direction: column;
     text-align: center;
     gap: 0.5rem;
   }
   .profolio-image > img {
-  width: 190px;
-  border-radius: 55px;
-  opacity: 0.9;
-  transform: scale(1);
-  
+    width: 190px;
+    border-radius: 55px;
+    opacity: 0.9;
+    transform: scale(1);
+    margin-left: 100px;
+    transition: transform 1s ease, opacity 1s ease, border-radius 1s ease;
+  }
 
-  transition: transform 1s ease, opacity 1s ease, border-radius 1s ease;
-}
-  
   .profolio-image > img:hover {
-  cursor: inherit;
-  opacity: 1;
-  border-radius: 55px;
-  transform: scale(1);
-  transition: all 1s ease;
-}
-  
+    cursor: inherit;
+    opacity: 1;
+    border-radius: 55px;
+    transform: scale(1);
+    transition: all 1s ease;
+  }
+
+  .nav {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+
+    justify-content: flex-start;
+
+   
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .nav ul a {
+    color: var(--primery-color);
+    font-family: p-font;
+  }
+
+  .nav ul .nav-item {
+    padding: 10px 10px;
+    color: var(--primery-color);
+
+    border-radius: 45px;
+  }
+
+  .nav ul .nav-item:hover {
+    background-color: rgb(128, 119, 119);
+  }
 }
