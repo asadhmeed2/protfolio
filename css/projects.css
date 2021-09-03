@@ -16,14 +16,13 @@
 }
 body {
   background: #6d6d81;
-  
 }
-h1,h2{
-    font-family: h1-font;
-    
+h1,
+h2 {
+  font-family: h1-font;
 }
-p{
-    font-family: p-font;
+p {
+  font-family: p-font;
 }
 header {
   width: 100%;
@@ -33,64 +32,65 @@ header {
   opacity: 0.9;
 }
 
-.header-container{
-    height: 100vh;
-    display: grid;
+.header-container {
+  height: 100vh;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(6, 1fr);
-grid-column-gap: 40px;
-grid-row-gap:1rem ;
-padding: 3rem;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 1rem;
 }
-.box{
-    text-align: center;
-    border-radius: 45px;
-    line-height: 1.7rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: scale(1);
-    transition: all 1s ease;
+.box {
+  text-align: center;
+  border-radius: 45px;
+  line-height: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scale(1);
+  transition: all 1s ease;
+  margin: 0 3rem;
 }
-.box:hover{
-    font-size: 20px;
- transform: scale(1.1);
- transition: all 1s ease;
+.box:hover {
+  font-size: 20px;
+  font-weight: bold;
+  transform: scale(1.14);
+  transition: all 1s ease;
 }
 .nav {
   grid-area: 1 / 1 / 2 / 4;
 }
-.main-subject{
-    grid-area: 2 / 1 / 3 / 4;
-    text-align: center;
+.main-subject {
+  grid-area: 2 / 1 / 3 / 4;
+  text-align: center;
 }
 .box-1 {
   grid-area: 3 / 1 / 5 / 2;
-  background: url(../img/tesla-clone.jpg)no-repeat center center/cover;
+  background: url(../img/tesla-clone.jpg) no-repeat center center/cover;
   color: var(--primery-color);
   position: relative;
 }
-.box-1 a{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.box-1 a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .box-2 {
   grid-area: 3 / 2 / 5 / 3;
-  background: url(../img/apple-clone.png)no-repeat center center/cover;
-   position: relative;
+  background: url(../img/apple-clone.png) no-repeat center center/cover;
+  position: relative;
 }
-.box-2 a{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.box-2 a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .box-3 {
   grid-area: 3 / 3 / 5 / 4;
-   background: url(../img/coming-soon.jpg)no-repeat center center/cover;
+  background: url(../img/coming-soon.jpg) no-repeat center center/cover;
 }
-.footer{
-  grid-area: 6 / 1 / 7 / 4; 
+.footer {
+  grid-area: 6 / 1 / 7 / 4;
   text-align: center;
 }
 
@@ -103,10 +103,12 @@ p {
 
 .nav {
   width: 100%;
+
   display: flex;
   justify-content: center;
   position: fixed;
-
+  background: white;
+  opacity: 0.85;
   font-size: 1.5rem;
 }
 
@@ -117,13 +119,13 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: oldlace;
+
   opacity: 0.8;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 .nav ul a {
-  color: var(--primery-color);
+  color: black;
   font-family: p-font;
 }
 
@@ -139,4 +141,43 @@ ul {
 }
 .nav ul .nav-item:hover {
   background-color: rgb(128, 119, 119);
+}
+
+@media (max-width: 576px) {
+  .header-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  }
+
+  .nav {
+      width: 35%;
+      grid-area: 1 / 1 / 3 / 2;
+      display: block;
+      background: transparent;
+    }
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .nav ul li {
+        border-bottom: black solid 1px;
+    }
+  .main-subject {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .box-1 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .box-2 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .box-3 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+  .footer {
+    grid-area: 7 / 1 / 8 / 2;
+  }
 }
