@@ -26,20 +26,24 @@
                         <li class="nav-item"><a href="#">resume(CV)</a></li>
                     </ul>
                 </nav>
-                <div class=" h-box profolio-image"> <img src="./img/myImage.jpeg" alt=""></div>
+                <div class="img-container">
+
+                    <div class=" h-box profolio-image"> <img src="./img/myImage.jpeg" alt=""></div>
+                </div>
                 <div class="h-box content-wraper">
                     <h1 class="my-name">
                         <span class="first-name">Asaad</span> <span class="last-name">hmeed</span>
                     </h1>
                     <p class="header-content-text"><span> Challenge yourself to become a better developer
                     </p>
-
+                    <p>asadhmeed1@gmail.com</p>
                     <input type="checkbox" id="show-about" class="about-btn" value="About">
                     <label for="show-about" class="">About</label>
                     <div class="about-content">
                         <p> hi my name is asaad hmeed ,i was born in <strong>peki'in</strong> village in northern israel
                             1990 graduated from
                             peki'in local high school</p>
+                            
                         <input type="checkbox" id="show-about" class="close-about-btn" value="About">
                         <div class="close-wraper">
                             <label for="show-about" class="close-about">close</label>
@@ -53,8 +57,34 @@
                         <li><a href="https://github.com/newasad"><i class="fab fa-github-alt fa-3x"></i></a> </li>
                     </ul>
                 </div>
+                <input class="btn-contact-check" type="checkbox" id="email" value="contact via email">
+                <div class="email-btn-container">
+                    <label class="show-contact-btn" for="email">Contact Us</label>
+                </div>
+                <div class="contact-form">
+                    <div class="contact-form-wraper">
 
+                        <form action="" onSubmit="return false;">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="name">
+
+                            <label for="email">email</label>
+                            <input type="email" id="email" placeholder="email">
+
+                            <label for="massage">masseg</label>
+                            <textarea name="massage" id="massage" cols="30" rows="10"
+                                placeholder="enter your massage"></textarea>
+
+                            <input class="contact-btn-submit" type="submit" value="submit" id="contact-submit">
+                        </form>
+
+                    </div>
+
+                    <div class="email-close-btn-container"></div>
+                    <label class="email-close-btn" for="email">clase</label>
+                </div>
             </div>
+        </div>
         </div>
     </header>
 </body>
